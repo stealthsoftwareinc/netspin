@@ -1,0 +1,22 @@
+//
+// Copyright 2026 Stealth Software Technologies, Inc.
+// SPDX-License-Identifier: Apache-2.0
+//
+
+mod backpressure_waits_for_buffer_space;
+mod buffer_can_be_unbounded;
+mod cloned_blocks_apply_loss_independently_in_all_attachment_forms;
+mod complete_loss_does_not_delay_channel_closure;
+mod configured_message_size_defines_capacity_units;
+mod configured_model_provides_latency;
+mod constructors_use_default_settings;
+mod downstream_abort_is_propagated;
+mod loss_precedes_latency_and_buffer_admission;
+mod overflow_can_be_configured;
+mod pair_attachment_applies_fixed_latency;
+mod pair_attachment_preserves_downstream_message_splitting;
+mod receiver_attachment_applies_fixed_latency;
+mod tail_drop_discards_message_when_buffer_is_full;
+mod transmitter_attachment_applies_fixed_latency;
+mod upstream_abort_follows_delayed_messages;
+mod upstream_failure_follows_delayed_messages;

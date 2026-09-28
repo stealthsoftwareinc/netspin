@@ -1,0 +1,23 @@
+#
+# Copyright 2026 Stealth Software Technologies, Inc.
+# SPDX-License-Identifier: Apache-2.0
+#
+
+[package]
+name = "netspin-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "A high-fidelity sampling-based network modeling framework"
+readme.workspace = true
+repository.workspace = true
+license.workspace = true
+keywords = ["async", "simulation"]
+categories = ["asynchronous", "simulation"]
+
+[dependencies]
+bytes.workspace = true
+dyn-clone.workspace = true
+rand.workspace = true
+sha2.workspace = true
+tokio.workspace = true

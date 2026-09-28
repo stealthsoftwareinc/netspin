@@ -1,0 +1,43 @@
+//
+// Copyright 2026 Stealth Software Technologies, Inc.
+// SPDX-License-Identifier: Apache-2.0
+//
+
+mod bounded_channel_greedily_accepts;
+mod constructors_use_default_settings;
+mod declined_split_into_empty_channel_panics;
+mod declined_split_sends_nothing;
+mod dropping_receiver_interrupts_backpressured_send;
+mod dropping_transmitter_preserves_delayed_messages;
+mod equal_arrivals_are_received_in_send_order;
+mod first_terminal_event_is_sticky;
+mod forwarded_messages_arrive_at_consistent_moments;
+mod message_arrives_while_sender_is_parked;
+mod message_larger_than_capacity_panics;
+mod message_larger_than_capacity_streams_through;
+mod nonzero_latency_send_into_local_channel_panics;
+mod ordered_low_latency_catches_up;
+mod partial_send_failure_reports_progress;
+mod partial_send_timeout_reports_progress;
+mod random_sends_are_received_in_arrival_order;
+mod receive_is_interrupted_by_transmitter_drop;
+mod receive_waits_for_arrival;
+mod receiver_abort_discards_delayed_messages;
+mod receiver_failure_discards_delayed_messages;
+mod receiver_failure_interrupts_backpressured_send;
+mod reserved_message_can_be_dropped_after_backpressured_sender_is_abandoned;
+mod reserved_message_holds_buffer_space;
+mod reserved_message_partial_release_frees_buffer_space;
+mod reserved_receive_returns_failure;
+mod send_into_almost_full_channel_splits;
+mod send_into_almost_full_channel_waits_for_space;
+mod send_into_totally_full_channel_does_not_split;
+mod send_into_totally_full_channel_times_out;
+mod send_into_totally_full_channel_waits_for_space;
+mod send_readiness_wins_at_timeout;
+mod send_timeout_is_nonterminal;
+mod transmitter_abort_follows_delayed_messages;
+mod transmitter_failure_follows_delayed_messages;
+mod transmitter_failure_interrupts_receive;
+mod unordered_low_latency_overtakes;
+mod zero_latency_send_into_local_channel_works;

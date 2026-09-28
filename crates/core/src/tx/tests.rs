@@ -1,0 +1,41 @@
+//
+// Copyright 2026 Stealth Software Technologies, Inc.
+// SPDX-License-Identifier: Apache-2.0
+//
+
+mod active_receiver_splice_panics;
+mod custom_message_size_splice_panics;
+mod duplicate_transmitter_polling_is_allowed;
+mod error_reports_sticky_failure;
+mod expect_send_panics_without_capacity;
+mod expect_send_sends_with_available_capacity;
+mod free_space_reports_available_space;
+mod free_transmitter_is_ready;
+mod full_transmitter_becomes_ready_after_receive;
+mod full_transmitter_reschedules_timed_poll;
+mod indirect_splice_cycle_panics;
+mod message_split_splice_panics;
+mod nonempty_downstream_channel_splice_panics;
+mod nonempty_upstream_channel_splice_panics;
+mod nonlocal_channel_splice_panics;
+mod nonlocal_upstream_channel_splice_preserves_latency;
+mod poll_set_entry_retains_transmitter_access;
+mod polling_and_sending_from_different_tasks_panics;
+mod readiness_only_requires_some_free_space;
+mod readiness_threshold_is_configurable;
+mod reservation_release_makes_transmitter_ready;
+mod send_with_options_applies_latency;
+mod send_with_options_overrides_endpoint_timeout;
+mod send_with_options_times_out;
+mod sending_timeout_is_configurable;
+mod sending_timeout_is_used_by_send;
+mod splice_chains_connect_endpoints;
+mod splice_connects_endpoints;
+mod splice_cycle_panics;
+mod terminated_transmitter_is_ready;
+mod try_send_returns_failure;
+mod try_send_with_options_applies_latency;
+mod try_send_with_options_ignores_timeout;
+mod unequal_capacity_splice_chain_uses_upstream_capacity;
+mod unequal_capacity_splice_uses_upstream_capacity;
+mod upstream_message_sizing_splice_is_retained;
